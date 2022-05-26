@@ -12,7 +12,7 @@ const Landing = () => {
                   Placeat nostrum aliquam odit ipsa quos voluptate sint optio
                   dicta cupiditate modi?
                </p>
-               <ExploreButton />
+               <ExploreButton log="Explore Bang!" />
             </div>
          </div>
       </div>

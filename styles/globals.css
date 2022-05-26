@@ -6,9 +6,6 @@
 #hamburgerButton.hamburgerNormal {
    @apply flex flex-col justify-between h-5 items-end;
 }
-#hamburgerButton.hamburgerNormal:hover > span {
-   @apply bg-rose-300;
-}
 #hamburgerButton.hamburgerNormal > span {
    @apply w-6 h-1 block bg-rose-500;
 }

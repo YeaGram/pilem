@@ -19,7 +19,7 @@ export default function MobileNavbar(props) {
                <a href="#">Contact</a>
             </li>
             <li className="pb-5 ">
-               <ExploreButton />
+               <ExploreButton log="Explore" />
             </li>
          </ul>
       </nav>

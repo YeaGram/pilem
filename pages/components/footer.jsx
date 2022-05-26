@@ -1,3 +1,11 @@
+import {
+   BsGithub,
+   BsTwitter,
+   BsReddit,
+   BsFacebook,
+   BsInstagram,
+   BsLinkedin,
+} from "react-icons/bs";
 const Footer = () => {
    return (
       <div className="w-full h-40 flex flex-col justify-center items-center bg-gray-800 outline text-white">
@@ -27,27 +35,75 @@ const Footer = () => {
                <h5 className="font-medium font-poppins text-center mt-2">
                   Follow Us!
                </h5>
-               <div className="flex justify-evenly w-60 text-center">
+               <div className="flex justify-evenly w-60 text-center ">
                   <ul className="flex flex-col">
                      <li>
-                        <a href="">Github</a>
+                        <a
+                           href="https://github.com/"
+                           rel="noreferrer"
+                           target="_blank"
+                           className="flex items-center hover:text-rose-500"
+                        >
+                           <BsGithub className="mr-1" />
+                           Github
+                        </a>
                      </li>
                      <li>
-                        <a href="">Twitter</a>
+                        <a
+                           href="https://twitter.com/"
+                           rel="noreferrer"
+                           target="_blank"
+                           className="flex items-center hover:text-rose-500"
+                        >
+                           <BsTwitter className="mr-1" />
+                           Twitter
+                        </a>
                      </li>
                      <li>
-                        <a href="">Reddit</a>
+                        <a
+                           href="https://reddit.com/"
+                           rel="noreferrer"
+                           target="_blank"
+                           className="flex items-center hover:text-rose-500"
+                        >
+                           <BsReddit className="mr-1" />
+                           Reddit
+                        </a>
                      </li>
                   </ul>
                   <ul className="flex flex-col">
                      <li>
-                        <a href="">Facebook</a>
+                        <a
+                           href="https://facebook.com/"
+                           rel="noreferrer"
+                           target="_blank"
+                           className="flex items-center hover:text-rose-500"
+                        >
+                           <BsFacebook className="mr-1" />
+                           Facebook
+                        </a>
                      </li>
                      <li>
-                        <a href="">Instagram</a>
+                        <a
+                           href="https://instagram.com/"
+                           rel="noreferrer"
+                           target="_blank"
+                           className="flex items-center hover:text-rose-500"
+                        >
+                           <BsInstagram className="mr-1" />
+                           Instagram
+                        </a>
                      </li>
                      <li>
-                        <a href="">Linkedln</a>
+                        <a
+                           href="https://linkedin.com/"
+                           rel="noreferrer"
+                           target="_blank"
+                           className="flex items-center hover:text-rose-500"
+                        >
+                           <BsLinkedin className="mr-1" />
+                           Linkedln
+                        </a>
                      </li>
                   </ul>
                </div>

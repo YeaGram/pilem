@@ -1,3 +1,4 @@
+import ExploreButton from "./exploreBtn";
 const Landing = () => {
    return (
       <div className="h-screen">
@@ -11,6 +12,7 @@ const Landing = () => {
                   Placeat nostrum aliquam odit ipsa quos voluptate sint optio
                   dicta cupiditate modi?
                </p>
+               <ExploreButton />
             </div>
          </div>
       </div>

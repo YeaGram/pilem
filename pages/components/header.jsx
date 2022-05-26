@@ -1,13 +1,24 @@
+import { useState } from "react";
 import Brand from "./brand";
+import Hamburger from "./hamburger";
+import MobileNavbar from "./mobileNavbar";
 import Navbar from "./navbar";
 
 const Header = () => {
+   const [navActive, setNavActive] = useState(true);
+   const navTogler = () => {
+      setNavActive(!navActive);
+   };
    return (
       <>
-         <header>
+         <header className="relative">
             <div className="flex justify-between w-full outline px-4 py-3 bg-gray-800 text-gray-300 items-center shadow-lg fixed z-20">
                <Brand />
                <Navbar />
+               <MobileNavbar isActive={navActive} />
+               <div onClick={navTogler} className="sm:hidden">
+                  <Hamburger isActive={navActive} />
+               </div>
             </div>
          </header>
       </>

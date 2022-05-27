@@ -11,6 +11,8 @@ module.exports = {
             Main: "url('/landing.webp')",
             Random:
                "url(https://d1csarkz8obe9u.cloudfront.net/posterpreviews/action-movie-poster-template-design-0f5fff6262fdefb855e3a9a3f0fdd361_screen.jpg?ts=1636996054)",
+            Random2:
+               "url(https://d1csarkz8obe9u.cloudfront.net/posterpreviews/movie-poster-template-design-3fde07497ef159f8ba0617dee83d982e_screen.jpg?ts=1636997626)",
          },
          dropShadow: {
             myDrop1: "1px 2px 3px rgba(0,0,0,.6)",

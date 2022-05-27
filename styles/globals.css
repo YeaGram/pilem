@@ -5,7 +5,7 @@
 
 html,
 body {
-   height: 100%;
+   @apply bg-rose-900 h-full;
 }
 #hamburgerButton.hamburgerNormal {
    @apply flex flex-col justify-between h-5 items-end;

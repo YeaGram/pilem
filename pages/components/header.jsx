@@ -12,7 +12,7 @@ const Header = () => {
    return (
       <>
          <header className="relative">
-            <div className="flex top-0 justify-between w-full outline px-4 py-3 bg-gray-800 text-gray-300 items-center shadow-lg fixed z-20">
+            <div className="flex top-0 justify-between w-full outline px-4 py-3 bg-gray-800 text-gray-300 items-center shadow-lg fixed z-40">
                <Brand />
                <Navbar />
                <MobileNavbar isActive={navActive} />

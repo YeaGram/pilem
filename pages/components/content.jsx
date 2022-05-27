@@ -1,6 +1,4 @@
 import Partikel from "./particleBackground";
-import Card from "./card";
-import Newest from "./newest";
 import TopAnime from "./topAnime";
 import { useState, useEffect } from "react";
 

@@ -2,11 +2,27 @@ import Partikel from "./particleBackground";
 import Card from "./card";
 import Newest from "./newest";
 import TopAnime from "./topAnime";
+import { useState, useEffect } from "react";
 
-const Content = (props) => {
+const Content = () => {
+   const [topAnime, SetTopAnime] = useState([]);
+
+   const GetTopAnime = async () => {
+      const temp = await fetch(
+         `https://api.jikan.moe/v3/top/anime/1/bypopularity`
+      ).then((res) => res.json());
+
+      SetTopAnime(temp.top.slice(0, 50));
+   };
+
+   useEffect(() => {
+      GetTopAnime();
+   }, []);
+
+   ////
    return (
       <div>
-         <TopAnime animeList={props.list} />
+         <TopAnime animeList={topAnime} />
          {/* <Newest /> */}
 
          <div className="w-full  border-t-2 border-rose-900 flex flex-col items-center ">

@@ -1,12 +1,12 @@
 import Partikel from "./particleBackground";
 import Card from "./card";
-import Trending from "./trending";
 import Newest from "./newest";
+import TopAnime from "./topAnime";
 
-const Content = () => {
+const Content = (props) => {
    return (
       <div>
-         <Trending />
+         <TopAnime animeList={props.list} />
          {/* <Newest /> */}
 
          <div className="w-full  border-t-2 border-rose-900 flex flex-col items-center ">
